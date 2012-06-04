@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_fss_roo_pizzashop_domain_Pizza" object="${pizza}" path="/pizzas" z="/2/cS/LBVXT3OrtJVDOClqVt78g=">
+        <field:display field="name" id="s_com_fss_roo_pizzashop_domain_Pizza_name" object="${pizza}" z="/LgNnNCqS9nD87CrHDQryzLymt8="/>
+        <field:display field="price" id="s_com_fss_roo_pizzashop_domain_Pizza_price" object="${pizza}" z="4STNcrnCLrF7ID+HB2hCRCa/MJM="/>
+        <field:display field="toppings" id="s_com_fss_roo_pizzashop_domain_Pizza_toppings" object="${pizza}" z="uwZYnZZmvpO075zpR1ibsfGrN4g="/>
+    </page:show>
+</div>

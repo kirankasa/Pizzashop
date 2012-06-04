@@ -1,0 +1,30 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-02 12:37:59
+project --topLevelPackage com.fss.roo.pizzashop --projectName pizzashop --java 6
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-02 12:38:01
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-02 12:38:07
+jpa setup --database MYSQL --provider HIBERNATE --databaseName pizza --userName root --password root
+entity jpa --class ~.domain.Topping --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float
+field set --fieldName toppings --type ~.domain.Topping
+entity jpa --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address  --sizeMax 30
+field number --fieldName total --type java.lang.Float
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+perform tests
+web mvc setup
+web mvc all --package ~.web
+security setup
+// script --file samples\test.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-02 12:49:20
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-02 21:20:02
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-04 22:43:51
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-04 22:44:03
