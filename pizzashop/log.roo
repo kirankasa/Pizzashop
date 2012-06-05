@@ -28,3 +28,6 @@ quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-04 22:43:51
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-04 22:44:03
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-05 12:19:27
+jpa setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE 
+perform tests
